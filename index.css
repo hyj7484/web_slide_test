@@ -1,0 +1,45 @@
+input[type='radio']{
+  display: none;
+}
+.bullet {
+  position:absolute;
+  bottom:20px;
+  left:0;
+  right:0;
+  text-align:center;
+  z-index:10;
+}
+
+label{
+  width:10px;
+  height:10px;
+  border-radius:10px;
+  border:2px solid #666;
+  display:inline-block;
+  background:#fff;
+  font-size:0;
+  transition:0.5s;
+  cursor:pointer;
+}
+.slider_body{
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider{
+  width: calc(100% * 3);
+  height: 100%;
+  display: flex;
+  transition:1s;
+}
+
+.slide{
+  width: calc(100% / 3);
+  height: 100%;
+  background-color: rgb(171, 171, 171);
+}
+.slide_img{
+  width: 100%;
+  object-fit: fill;
+}
